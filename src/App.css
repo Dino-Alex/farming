@@ -1,0 +1,77 @@
+.background{
+  background-size:contain ;
+  background-position:center ;
+  background-attachment:fixed ;
+}
+.mobile-rotater {
+  transform-origin: left top;
+}
+.absolute{
+  position: absolute;
+  
+}
+.text{
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+.boder{
+  border: 1px white solid;
+}
+.text-bold{
+
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+.text-while{
+  text-align: center;
+  color: white;
+}
+
+
+.button:hover {
+  cursor: pointer;
+}
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 80px;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./image/STAKEONLY.png');
+  background-size: cover;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 45px;
+  width: 45px;
+  left: 20px;
+  bottom: 18px;
+  background-image: url('./image/NOSTICK.png');
+  background-size: cover;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked+.slider:before {
+  transform: translateX(90px);
+  /* Adjust the value to match the width of the slider */
+}
